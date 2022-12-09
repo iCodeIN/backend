@@ -1,0 +1,11 @@
+[package]
+name = "tweechat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.6"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync"] }
+argon2 = { version = "0.4.1", features = ["password-hash"] }
+sqlx = { version = "0.6", features = ["runtime-tokio-native-tls", "offline", "postgres", "macros"] }
+
